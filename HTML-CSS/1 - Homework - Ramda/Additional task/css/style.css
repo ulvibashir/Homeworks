@@ -10,20 +10,125 @@
 .left-image {
     border: 15px #0eacaf solid;
 
-    background-color: aqua;
     display: inline-block;
     width: 40%;
-    height: 300px;
+    height: 267px;
+    transition: all 0.5s ease;
+    
+    background-image: url("../img/coffee.jpg");
+    background-size: 150%;
+
+
 }
 
 .right-image {
-    background-color: blue;
     display: inline-block;
     width: 40%;
-    height: 300px;
+    height: 267px;
     border-bottom: 15px #0eacaf solid;
     border-right: 15px #0eacaf solid;
     border-top: 15px #0eacaf solid;
     line-height: 0;
+    transition: all 0.5s ease;
+    background-image: url("../img/city.jpg");
+    background-size: 150%;
 }
 
+.right-image:hover{
+    background-size: 180%;
+    cursor: pointer; 
+
+}
+
+.left-image:hover{
+    background-size: 180%;
+    cursor: pointer; 
+}
+
+.border {
+    font-size: 0;
+}
+
+.obj {
+    object-fit: cover;
+    width: 100%;
+}
+
+
+.p1  {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;   
+    top: 100px;
+    left: 527px;
+    position: absolute;
+    z-index: 2;
+    font-size: 22px;
+    color: white;
+}
+
+.p2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;   
+    top: 135px;
+    left: 527px;
+    position: absolute;
+    z-index: 2;
+    font-size: 22px;
+    color: white; 
+}
+
+.p3 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;   
+    top: 180px;
+    left: 527px;
+    position: absolute;
+    z-index: 2;
+    font-size: 14px;
+    color: white; 
+}
+
+.left-image img {
+    top: 181px;
+    width: 15px;
+    height: 15px;
+    left: 630px;
+    position: absolute;
+    z-index: 2;
+}
+
+.p4  {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;   
+    top: 100px;
+    left: 950px;
+    position: absolute;
+    z-index: 2;
+    font-size: 22px;
+    color: white;
+}
+
+.p5 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;   
+    top: 135px;
+    left: 950px;
+    position: absolute;
+    z-index: 2;
+    font-size: 22px;
+    color: white; 
+}
+
+.p6 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;   
+    top: 180px;
+    left: 950px;
+    position: absolute;
+    z-index: 2;
+    font-size: 14px;
+    color: white; 
+}
+
+.right-image img {
+    top: 173px;
+    width: 15px;
+    height: 15px;
+    left: 1083px;
+    position: absolute;
+    z-index: 2;
+}
