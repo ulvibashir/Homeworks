@@ -1,0 +1,29 @@
+.container {
+  
+    margin: 0  auto;
+    max-width: 1000px;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+.left-image {
+    border: 15px #0eacaf solid;
+
+    background-color: aqua;
+    display: inline-block;
+    width: 40%;
+    height: 300px;
+}
+
+.right-image {
+    background-color: blue;
+    display: inline-block;
+    width: 40%;
+    height: 300px;
+    border-bottom: 15px #0eacaf solid;
+    border-right: 15px #0eacaf solid;
+    border-top: 15px #0eacaf solid;
+    line-height: 0;
+}
+
