@@ -10,7 +10,7 @@ body, html {
     padding: 0;
     margin: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-
+    box-sizing: border-box;
 }
 
 
@@ -38,6 +38,7 @@ body, html {
     font-weight: 600;
     text-transform: uppercase;
     text-decoration: none;
+    transition: all 0.3s;
 }
 
 
@@ -46,6 +47,7 @@ body, html {
      background: url("../img/sprite.png") no-repeat top left;
      width: 19px;
      height: 20px; 
+     transition: all 0.3s;
 }
 
 .sprite.calendar {
@@ -103,10 +105,11 @@ body, html {
 
 }
 
-.links > p > span > a {
+.links p span a {
     color: var(--primary);
     text-decoration: none;
     font-weight: 500;
+    transition: all 0.3s;
 }
 
 .links p span a:hover {
@@ -131,3 +134,133 @@ body, html {
 }
 
 
+/* Middle section */
+
+.section {
+    display: flex;
+    height: calc(100% - 60px);
+}
+
+.form {
+    border-radius: 15px;
+    background-color: #ffffff;
+    margin: auto;
+    height: 600px;
+    width: 450px;
+    padding: 35px 50px;
+}
+
+.box {
+    background-color: var(--primary);
+    width: 25px;
+    height: 25px;
+    position: relative;
+    left: -50px;
+}
+
+.row {
+    display: flex;
+}
+
+.register-labels {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.register-labels a:first-child {
+    text-decoration: none;
+    position: relative;
+    left: -26px;
+    color: #434343;
+    font-size: 20px;
+}
+
+.register-labels a:last-child {
+    text-decoration: none;
+    font-size: 15px;
+    color: var(--primary);
+
+}
+
+.register-labels a:last-child:hover {
+    text-decoration: underline;
+}
+
+.facebook {
+    width: 160px;
+    height: 50px;
+    background-color: #305db8;
+    align-items: center;
+    padding-left: 18px;
+    position: relative;
+    transition: all 0.3s;
+
+}
+.facebook:hover {
+    background-color: #264b96;
+}
+
+.google {
+    width: 160px;
+    height: 50px;
+    background-color: #df4a32;
+    align-items: center;
+    padding-left: 18px;
+    position: relative;
+    transition: all 0.3s;
+
+
+}
+.google:hover {
+    background-color: #c3412c;
+}
+
+.face-google.row{
+    justify-content: space-between;
+    margin-top: 10px;
+    padding: 0 10px 0 10px;
+}
+
+
+.sprite.facebook-icon {
+    background-position: -198px 0;
+    width: 10px;
+}
+
+
+.sprite.facebook-icon::after {
+    content: '';
+    position: absolute;
+    background-color: #2b54a5;
+    width: 1px;
+    height: 70%;
+    left: 55px;
+    top: 7px;
+}
+
+
+.sprite.google-icon::after {
+    content: '';
+    position: absolute;
+    background-color: #c8422d;
+    width: 1px;
+    height: 70%;
+    left: 55px;
+    top: 7px;
+}
+
+
+.sprite.google-icon {
+    background-position: -354px 0; 
+    width: 25px; 
+    height: 16px;
+}
+
+.face-google div :last-child {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+    padding-left: 39px;
+}
