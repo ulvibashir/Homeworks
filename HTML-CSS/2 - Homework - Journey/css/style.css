@@ -1,0 +1,133 @@
+body, html {
+    height: 100%;
+}
+
+:root {
+    --primary: #3cb878;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+
+.container {
+    background-image: url("../img/background.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+
+/* Header */
+.header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.logo a {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+
+/* Sprites start */
+.sprite {
+     background: url("../img/sprite.png") no-repeat top left;
+     width: 19px;
+     height: 20px; 
+}
+
+.sprite.calendar {
+     background-position: 0 0;
+     height: 19px;
+ } 
+.sprite.calendar:hover{
+    background-position: -49px 0;
+ }
+
+
+.sprite.forum {
+     background-position: -238px 0;
+     width: 28px;
+}
+.sprite.forum:hover {
+    background-position: -296px 0;
+}
+
+
+.sprite.compass {
+     background-position: -98px 0;
+     width: 20px;
+}
+
+.sprite.compass:hover {
+    background-position: -148px 0;
+}
+/* Sprites end */
+
+
+.logo {
+    flex: 2;
+    padding-left: 80px;
+}
+
+.logo a:hover {
+    color: var(--primary);
+}
+
+.icons {
+    display: flex;
+    justify-content: flex-end;
+    flex: 2;
+}
+
+.links {
+    text-align: center;
+    flex: 1;
+}
+
+.links p {
+    color: #ffffff;
+    position: relative;
+
+}
+
+.links > p > span > a {
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.links p span a:hover {
+    text-decoration: underline;
+}
+
+.links p ::before{
+    content: '';
+    background-color: #32302e;
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    left: 35px;
+}
+
+.icons :first-child {
+    margin-right: 30px;
+}
+
+.icons :not(:first-child){
+    margin-right: 30px;
+}
+
+

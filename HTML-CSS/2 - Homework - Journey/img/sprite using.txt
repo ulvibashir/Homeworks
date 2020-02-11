@@ -1,0 +1,23 @@
+<div class='sprite calendar'></div>
+<div class='sprite calendar_hover'></div>
+<div class='sprite compass'></div>
+<div class='sprite compass_hover'></div>
+<div class='sprite facebook'></div>
+<div class='sprite forum'></div>
+<div class='sprite forum_hover'></div>
+<div class='sprite google'></div>
+
+
+
+
+.sprite { background: url('sprite.png') no-repeat top left; width: 19px; height: 20px;  } 
+.sprite.calendar { background-position: 0 0; height: 19px; } 
+.sprite.calendar_hover { background-position: -49px 0; height: 19px; } 
+.sprite.compass { background-position: -98px 0; width: 20px; } 
+.sprite.compass_hover { background-position: -148px 0; width: 20px; } 
+.sprite.facebook { background-position: -198px 0; width: 10px; } 
+.sprite.forum { background-position: -238px 0; width: 28px; } 
+.sprite.forum_hover { background-position: -296px 0; width: 28px; } 
+.sprite.google { background-position: -354px 0; width: 25px; height: 16px; } 
+
+
