@@ -188,6 +188,8 @@ body, html {
     text-decoration: underline;
 }
 
+/* Facebook and Google */
+
 .facebook {
     width: 160px;
     height: 50px;
@@ -200,6 +202,7 @@ body, html {
 }
 .facebook:hover {
     background-color: #264b96;
+    cursor: pointer;
 }
 
 .google {
@@ -215,6 +218,7 @@ body, html {
 }
 .google:hover {
     background-color: #c3412c;
+    cursor: pointer;
 }
 
 .face-google.row{
@@ -244,11 +248,11 @@ body, html {
 .sprite.google-icon::after {
     content: '';
     position: absolute;
-    background-color: #c8422d;
+    background-color: #af3a28;
     width: 1px;
     height: 70%;
     left: 55px;
-    top: 7px;
+    top: 7px; 
 }
 
 
@@ -264,3 +268,136 @@ body, html {
     font-size: 16px;
     padding-left: 39px;
 }
+
+.or p{
+    text-align: center;
+    color: #8e8e8e;
+    position: relative;
+    margin-top: 25px;
+}
+
+.or p::before{
+    content: '';
+    height: 1px;
+    position: absolute;
+    background-color: #eaeaea;
+    width: 134px;
+    top: 12px;
+    left: 11px;
+}
+
+.or p::after{
+    content: '';
+    height: 1px;
+    position: absolute;
+    background-color: #eaeaea;
+    width: 134px;
+    top: 12px;
+    right: 11px;
+}
+
+.face-google div{
+    border-radius: 4px;
+}
+
+
+/* Text Inputs */
+
+.textbox-inputs input {
+    outline: none;
+    border-radius: 3px;
+    width: 100%;
+    height: 45px;
+    margin: 10px 0 10px 0;
+    padding-left: 12px;
+    font-size: 14px;
+    border: 1px solid #eaeaea;
+    transition: all 0.3s;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #676767;
+    font-weight: 500;
+}
+
+.textbox-inputs input::placeholder{
+    color:#bebebe ;
+}
+
+.textbox-inputs input:focus{
+    box-shadow: 0px 2px 7px gray;
+}
+
+.textbox-inputs input:focus::placeholder{
+    color:#676767 ;
+    
+}
+
+/* Checkbox */
+.checkbox-agreement p {
+    padding-left: 15px;
+}
+.checkbox-agreement a {
+    color: var(--primary);
+    text-decoration: none;
+}
+.checkbox-agreement a:hover {
+    text-decoration: underline;
+}
+
+.checkbox-agreement {
+    display: flex;
+}   
+
+.check-label {
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border-radius: 3px;
+    border: 1px solid #bebebe;
+    position: relative;
+    transition: all 0.3s;
+}
+
+.check-label::after{
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 10px;
+    border-bottom: 3px solid var(--primary);
+    border-right: 3px solid var(--primary);
+    border-radius: 2px;
+    top: -30%;
+    left: 0%;
+    transform: translate(50%,50%) rotateZ(40deg);
+    opacity: 0;
+    transition: all 0.3s;
+
+}
+
+#checkbox-cls:checked ~.check-label::after{
+    opacity: 1;
+}
+
+/* Button */
+
+.button-container{
+    height: 45px;
+    margin-top: 16px;
+}
+
+.button-container button {
+    width: 100%;
+    height: 100%;
+    outline: none;
+    background-color: var(--primary);
+    border: none;
+    border-radius: 3px;
+    font-size: 16px;
+    color: #fff;
+    transition: all 0.3s;
+}
+
+.button-container button:hover{
+    background-color: #329a65;
+}
+
