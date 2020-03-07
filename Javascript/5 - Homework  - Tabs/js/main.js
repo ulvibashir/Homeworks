@@ -94,7 +94,7 @@ function addTab() {
     message will be heard loud and clear: fear the assassin with no maste  her as a symbol of hope, and a portent of great change 
     her as a symbol of hope, and a portent of great change`;
 
-    contentArray.push(newTabContent);
+    contentArray.push(newTabContent);``
     console.log(contentArray);
     console.log(tabArray);
     newTab.addEventListener("click", () => {
@@ -125,6 +125,7 @@ function addTab() {
         newTab.textContent = value;
         console.log(value);
     })
+
 
 
     newTab.addEventListener('contextmenu', () => {
